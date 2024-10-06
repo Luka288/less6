@@ -69,6 +69,12 @@ section.btns ul li a {
   background-color: #2c3e4c;
 }
 
+.aClass {
+  text-decoration: none;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 @media (max-width: 768px) {
   section.bars {
     width: 100%;

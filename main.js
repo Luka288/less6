@@ -13,6 +13,10 @@ closeIcon.classList.add("fa-solid", "fa-close");
 
 navHome.innerText = "home";
 navAbout.innerText = "about";
+navHome.href = "/";
+navAbout.href = "/";
+navHome.classList.add("aClass");
+navAbout.classList.add("aClass");
 
 ul.appendChild(closeIcon);
 ul.appendChild(Homeli);
