@@ -18,7 +18,6 @@ navAbout.href = "/";
 navHome.classList.add("aClass");
 navAbout.classList.add("aClass");
 
-ul.appendChild(closeIcon);
 ul.appendChild(Homeli);
 ul.appendChild(Aboutli);
 ul.classList.add("box");
@@ -31,11 +30,10 @@ icon.addEventListener("click", function () {
   ul.classList.toggle("show");
   if (ul.classList.contains("show")) {
     ul.style.display = "flex";
-    icon.style.display = "none";
+    icon.classList.replace("fa-bars", "fa-close");
     closeIcon.style.display = "block";
   } else {
-    icon.syle.display = "block";
-    closeIcon.style.display = "none";
+    icon.classList.replace("fa-close", "fa-bars");
     ul.style.display = "none";
   }
 });
@@ -44,7 +42,6 @@ closeIcon.addEventListener("click", function () {
   ul.classList.remove("show");
   icon.style.display = "block";
   ul.style.display = "none";
-  closeIcon.style.display = "none";
 });
 
 // todo list
